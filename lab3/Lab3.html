@@ -31,7 +31,7 @@
       
       canvas.addEventListener("click", function(event) { 
         ctx.beginPath();
-        ctx.arc(50, 50, 6, 0, 2 * Math.PI);
+        ctx.arc(event.clientX, event.clientY, 6, 0, 2 * Math.PI);
         ctx.fill();
         
         noClicks += 1;
